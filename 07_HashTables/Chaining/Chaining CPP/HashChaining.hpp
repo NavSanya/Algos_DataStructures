@@ -16,6 +16,8 @@ class chainHash
         void insertVal(int val);
         //delete val from hash table
         void deleteVal(int target);
+        // Search if present
+        bool ifPresent(int target);
         //hash function to get value into keys
         int hashFunc(int x);
         //displays the hash table

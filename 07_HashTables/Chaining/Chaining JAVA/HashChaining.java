@@ -46,6 +46,20 @@ class HashChaining
                 System.out.println("Not Found");
         }
 
+        public boolean ifPresent(int target)
+        {
+                int idx = hashFunc(target);
+                for(int i = 0; i < table[idx].size(); ++i)
+                {
+                        if(table[idx].get(i) == target)
+                        {
+                                return true;
+                        }
+                }
+                System.out.println("Not Found");
+                return false;
+        }
+
         public void printHash()
         {
                 for(int j = 0; j!=N; ++j)
@@ -77,6 +91,11 @@ class HashChaining
             obj.deleteVal(77);
             obj.printHash();
 
+            System.out.println("CHeck if 33 is present");
+            if(obj.ifPresent(33))
+            {
+                System.out.println("Found");
+            }
         }
 
 
