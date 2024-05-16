@@ -33,6 +33,22 @@ void chainHash::deleteVal(int target)
 
 }
 
+bool chainHash::ifPresent(int target)
+{
+        int idx = hashFunc(target);
+        for(int i = 0; i < table[idx].size(); i++)
+        {
+                if(table[idx][i] == target)
+                {
+                        return true;
+                }
+                
+        }
+        cout<<"NotFound\n";
+        return false;
+
+}
+
 void chainHash::printHash()
 {
         for(int j = 0; j!=N; ++j)
@@ -64,6 +80,12 @@ int main()
         cout<<"Delete 77 from table\n";
         obj.deleteVal(77);
         obj.printHash();
+
+        cout<<"check if 33 is present\n";
+        if(obj.ifPresent(33))
+        {
+                cout<<"Found\n";
+        }
 
 
         return 0;

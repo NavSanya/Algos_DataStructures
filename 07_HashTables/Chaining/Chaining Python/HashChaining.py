@@ -16,6 +16,13 @@ class HashChaining:
                         print("Not Found")
                         return
                 self.table[idx].remove(target)
+        
+        def ifPresent(self,target):
+                idx = self.hashFunc(target)
+                if target not in self.table[idx]:
+                        print("Not Found")
+                        return False
+                return True
 
         def printHash(self):
                 for j in range(self.N):
@@ -38,3 +45,8 @@ if __name__ == '__main__':
         print("\nDelete 77 from table")
         obj.deleteVal(77)
         obj.printHash()
+        
+        print("\nCheck if 33 is present")
+        if(obj.ifPresent):
+                print("\nFound")
+        
