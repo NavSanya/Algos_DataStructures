@@ -5,31 +5,20 @@ openAddHash::openAddHash(int v=0)
         cap = 20;
         N = v;  
         table.resize(cap);
-        arr.resize(cap);      
 }
 
 void openAddHash::printHash()
 {
 
         //printing vector of vectors
-        cout<<"\nVector of Vectors\n";
         for(int i = 0; i < table.size(); ++i)
         {
                 for(int j = 0; j < table.at(i).size(); ++j)
                 {
-                        if(j == table.at(i).size()-1)
-                                cout<<table[i][j];
-                        else
-                                cout<<table[i][j]<<"---->";
+                        cout << i << "---->";
+                        cout << table[i][j];
                 }
                 cout<<endl;
-        }
-
-        //printing array of nodes
-        cout<<"\nArray of Nodes\n";
-        for(int i = 0; i<N; ++i)
-        {
-                cout<<arr[i].key<<"---->"<<arr[i].val<<endl;
         }
 
 }
@@ -64,6 +53,35 @@ void openAddHash::insertVal(int value)
         table[newIdx].push_back(value);
 }
 
+void openAddHash::deleteVal(int target)
+{
+    int key = hashFunc(target);
+
+    for (int i = 0; i < table[key].size(); ++i)
+    {
+        if (table[key][i] == target)
+        {
+            table[key].erase(table[key].begin() + i);
+            cout << "Deleted " << target << endl;
+            return;
+        }
+    }
+
+    cout << target << " not found\n";
+}
+
+bool openAddHash::ifPresent(int target)
+{
+    int key = hashFunc(target);
+
+    for (int i = 0; i < table[key].size(); ++i)
+    {
+        if (table[key][i] == target)
+            return true;
+    }
+
+    return false;
+}
 
 
 int main()
@@ -77,18 +95,18 @@ int main()
                 obj.insertVal(nums.at(i));
         }
 
-        cout<<"Hash Table"<<endl;
+        cout << "Hash Table"<<endl;
         obj.printHash();
 
-        // cout<<"Delete 77 from table\n";
-        // obj.deleteVal(77);
-        // obj.printHash();
+        cout << "Delete 77 from table\n";
+        obj.deleteVal(77);
+        obj.printHash();
 
-        // cout<<"check if 33 is present\n";
-        // if(obj.ifPresent(33))
-        // {
-        //         cout<<"Found\n";
-        // }
+        cout << "check if 33 is present\n";
+        if(obj.ifPresent(33))
+        {
+                cout<<"Found\n";
+        }
 
 
         return 0;
