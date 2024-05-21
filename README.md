@@ -152,8 +152,8 @@ Python Program -> QuickSort.py
 <details>
 <summary>6. Hash Tables</summary>
 
-  ```
-  stuff
-  ```
+```
+stuff
+```
  
 </details>
