@@ -1,5 +1,6 @@
 # Algorithms and Data Structures
-This repository contains implementations of various algorithms and data structures in C++, Java, and Python.
+This repository provides implementations of various algorithms and data structures in C++, Java, and Python. It's a valuable resource for anyone wanting to learn or practice these fundamental computer science concepts. 
+(Implemented in VS Code)
 
 ## Contents
 <details>
@@ -89,14 +90,50 @@ This repository contains implementations of various algorithms and data structur
 </ul>
 </details>
 
-## Installation
+## Clone the Repository
 To clone this repository, use the following command:
-```
+```bash
 git clone https://github.com/NavSanya/Algos_DataStructures.git
 ```
 
 ## Usage
 Navigate to the desired language directory (C++, Java, or Python) and run the implementations.
+
+### Compiling and Running a C++ Program
+
+1. **Navigate to the folder containing the C++ files:**
+   ```bash
+   cd path/to/your/folder
+
+2. **Compile the program using g++:**
+   ```bash
+   g++ -o output_file source_file.cpp
+3. **Run the executable:**
+   ```bash
+   ./output_file
+
+### Compiling and Running a Java Program
+
+1. **Navigate to the folder containing the Java files:**
+   ```bash
+   cd path/to/your/folder
+
+2. **Compile the program using javac:**
+   ```bash
+   javac source_file.java
+3. **Run the compiled class:**
+   ```bash
+   java source_file
+
+### Compiling and Running a Python Program
+
+1. **Navigate to the folder containing the Java files:**
+   ```bash
+   cd path/to/your/folder
+
+2. **Run the program:**
+   ```bash
+   python3 source_file.py
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
