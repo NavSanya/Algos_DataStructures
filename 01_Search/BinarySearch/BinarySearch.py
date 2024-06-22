@@ -17,7 +17,7 @@ def binarySearch(myList, target, low, high):
 	if target == myList[mid]:
 		return mid
 	if target < myList[mid]:
-		return binarySearch(myList, target, low, mid)
+		return binarySearch(myList, target, low, mid - 1)
 	if target > myList[mid]:
 		return binarySearch(myList, target, mid+1, high)
 	

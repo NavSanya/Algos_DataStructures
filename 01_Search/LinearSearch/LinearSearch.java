@@ -33,9 +33,6 @@ public class LinearSearch {
         }
         return -1;
     }// linearSearch()
-}// Class LinearSearch
-
-class MainLinear {
 
     public static void main(String args[]) throws IOException {
         LinearSearch bs = new LinearSearch();
@@ -53,4 +50,4 @@ class MainLinear {
         System.out.println("Value present on Index: " + arrAns);
 
     }// main()
-}// Class Main
+}// Class 
