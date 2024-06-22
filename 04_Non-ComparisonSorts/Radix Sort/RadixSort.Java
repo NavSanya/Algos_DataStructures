@@ -69,10 +69,6 @@ public class RadixSort
         return outarr;
     }
 
-}
-
-class MainRadix
-{
     public static void main(String[] args) {
         RadixSort rs = new RadixSort();
         int size = 10;
