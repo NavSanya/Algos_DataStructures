@@ -24,13 +24,13 @@ def merge(myList, low, high, mid):
  	
 	i = j = 0
 	k = low
-	while i < len(leftArray) and j < len(rightArray):
+	while i < lengthLeft and j < lengthRight:
 		if leftArray[i] <= rightArray[j]:
 			myList[k] = leftArray[i]
 			i += 1
 			k += 1
 		else:
-			myList[k] = leftArray[j]
+			myList[k] = rightArray[j]
 			j += 1
 			k += 1
 	

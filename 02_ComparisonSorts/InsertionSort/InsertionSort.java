@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 class InsertionSort {
@@ -54,9 +53,6 @@ class InsertionSort {
         return arr;
     }// insertionSort()
 
-}
-
-class MainInsertion {
     public static void main(String[] args) {
         InsertionSort is = new InsertionSort();
         int size = 10;

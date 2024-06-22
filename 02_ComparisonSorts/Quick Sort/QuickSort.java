@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 class QuickSort {
@@ -83,9 +82,6 @@ class QuickSort {
         return arr;
     }// quickSort()
 
-}
-
-class MainQuick {
     public static void main(String[] args) {
         QuickSort qs = new QuickSort();
         int size = 10;

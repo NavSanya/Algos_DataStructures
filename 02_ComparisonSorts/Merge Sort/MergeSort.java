@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 class MergeSort {
@@ -96,9 +95,7 @@ class MergeSort {
         } // if block
         return arr;
     }// mergeSort()
-}
 
-class MainMerge {
     public static void main(String[] args) {
         MergeSort ms = new MergeSort();
         int size = 10;
@@ -107,7 +104,7 @@ class MainMerge {
         System.out.println("Unsorted Array");
         ms.printArray(arr);
 
-        // Bubble Sort
+        // Merge Sort
         System.out.println("**********Merge Sort**********");
         arrAns = ms.mergeSort(arr, 9, 0);
         ms.printArray(arrAns);

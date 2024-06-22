@@ -44,9 +44,6 @@ class BubbleSort {
         } // for i loop (outer)
         return arr;
     }// bubbleSort()
-}// Class Bubblesort
-
-class MainBubble {
 
     public static void main(String args[]) throws IOException {
         BubbleSort bs = new BubbleSort();
@@ -62,4 +59,4 @@ class MainBubble {
         bs.printArray(arrAns);
 
     }// main()
-}// Class Main
+}// Class

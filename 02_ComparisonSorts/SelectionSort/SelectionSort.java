@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 class SelectionSort {
@@ -51,9 +50,7 @@ class SelectionSort {
         } // for i loop (outer)
         return arr;
     }// selectionSort()
-}
 
-class MainSelection {
     public static void main(String[] args) {
         SelectionSort ss = new SelectionSort();
         int size = 10;
