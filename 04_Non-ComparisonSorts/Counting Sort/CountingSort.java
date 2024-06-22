@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 class CountingSort {
@@ -52,9 +51,6 @@ class CountingSort {
 
     }// countingSort()
 
-}
-
-class MainCounting {
     public static void main(String[] args) {
         CountingSort cs = new CountingSort();
         int size = 10;
