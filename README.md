@@ -104,13 +104,19 @@ Navigate to the desired language directory (C++, Java, or Python) and run the im
 1. **Navigate to the folder containing the C++ files:**
    ```bash
    cd path/to/your/folder
-
+   ```
+   
 2. **Compile the program using g++:**
    ```bash
    g++ -o output_file source_file.cpp
+   ```
+   Replace `output_file` with the desired output file name and `source_file.cpp` with the
+
 3. **Run the executable:**
    ```bash
    ./output_file
+   ```
+   Replace `output_file` with the name of the output file generated in the previous step.
 
 ### Compiling and Running a Java Program
 
@@ -121,19 +127,27 @@ Navigate to the desired language directory (C++, Java, or Python) and run the im
 2. **Compile the program using javac:**
    ```bash
    javac source_file.java
+   ```
+   Replace `source_file.java` with the name of the Java file.
+
 3. **Run the compiled class:**
    ```bash
    java source_file
+   ```
+   Replace `source_file` with the name of the Java class (without the `.java` extension)
 
 ### Compiling and Running a Python Program
 
 1. **Navigate to the folder containing the Java files:**
    ```bash
    cd path/to/your/folder
+   ```
 
 2. **Run the program:**
    ```bash
    python3 source_file.py
+   ```
+   Replace `source_file` with the name of the python file.
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.

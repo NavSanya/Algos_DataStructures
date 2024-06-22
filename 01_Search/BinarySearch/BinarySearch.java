@@ -45,9 +45,6 @@ public class BinarySearch {
 
         return -999;
     }// binarySearch()
-}// Class BinarySearch
-
-class Demo {
 
     public static void main(String args[]) throws IOException {
         BinarySearch bs = new BinarySearch();
