@@ -174,9 +174,6 @@ public class DLL {
                 }
         }
 
-}
-
-class MainDLL {
         public static void main(String args[]) throws IOException {
                 System.out.println("The Double Linked List");
                 DLL objDll = new DLL();
